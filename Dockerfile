@@ -11,6 +11,7 @@ RUN adduser -S -H -u 4000 3proxy &&\
 
 # Add config file
 ADD 3proxy.cfg /etc/3proxy/3proxy.cfg
+ADD .proxyauth /etc/3proxy/.proxyauth
 
 RUN apk add --update ca-certificates git wget gcc make libc-dev linux-headers && \
     wget https://github.com/z3APA3A/3proxy/archive/${PROXY_VER}.tar.gz -P / &&\
