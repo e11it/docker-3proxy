@@ -1,9 +1,9 @@
 FROM debian:jessie
 MAINTAINER Ilya Makarov <im@e11it.ru>
 
-LABEL version="0.8.3"
+LABEL version="0.8.11"
 
-ENV PROXY_VER=0.8.3
+ENV PROXY_VER=0.8.11
 
 
 RUN apt-get -q update &&\
